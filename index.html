@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./input.css" />
+    <!-- FONT AWESOME LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shopify Clone</title>
+  </head>
+
+  <body>
+    <nav class="h-20 bg-lightCream shadow-md z-10 relative">
+      <div class="container p-4 md:mx-auto flex items-center justify-between">
+        <!-- navleft -->
+
+        <div class="logo">
+          <img src="./images/logo.png" class="w-20 inline-block" alt="" />
+        </div>
+
+        <ul
+          class="nav-list-left text-base space-x-6 xl:-ml-72 text-gray-600 hidden lg:flex">
+          <li>
+            <a href="#">Start</a
+            ><span class="inline-block"
+              ><i class="fas fa-chevron-down ml-1 text-[10px]"></i
+            ></span>
+          </li>
+          <li>
+            <a href="#">Sell</a
+            ><span class="inline-block"
+              ><i class="fas fa-chevron-down ml-2 text-[10px]"></i
+            ></span>
+          </li>
+          <li>
+            <a href="#">Market</a
+            ><span class="inline-block"
+              ><i class="fas fa-chevron-down ml-2 text-[10px]"></i
+            ></span>
+          </li>
+          <li>
+            <a href="#">Manage</a
+            ><span class="inline-block"
+              ><i class="fas fa-chevron-down ml-2 text-[10px]"></i
+            ></span>
+          </li>
+        </ul>
+
+        <!-- Navright -->
+        <ul class="nav-list-right text-base space-x-6 text-gray-600 hidden lg:flex">
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">Learn</a
+            ><span class="inline-block"
+              ><i class="fas fa-chevron-down ml-2 text-[10px]"></i
+            ></span>
+          </li>
+
+          <li>
+            <a href="#">Log in</a>
+          </li>
+          <li>
+            <a href="#" class="btn">Try for free</a>
+          </li>
+        </ul>
+        <!-- 🍔 Hamburger Icon -->
+        <div class="menu-icon lg:hidden">
+          <i class="fas fa-bars text-xl"></i>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <ul
+      class="mobile-menu text-2xl space-y-6 bg-white text-black p-4 h-[100vh] lg:hidden">
+      <li>
+        <a href="#">Start</a
+        ><span class="inline-block"
+          ><i class="fas fa-chevron-down ml-1 text-[10px]"></i
+        ></span>
+      </li>
+      <li>
+        <a href="#">Sell</a
+        ><span class="inline-block"
+          ><i class="fas fa-chevron-down ml-2 text-[10px]"></i
+        ></span>
+      </li>
+      <li>
+        <a href="#">Market</a
+        ><span class="inline-block"
+          ><i class="fas fa-chevron-down ml-2 text-[10px]"></i
+        ></span>
+      </li>
+      <li>
+        <a href="#">Manage</a
+        ><span class="inline-block"
+          ><i class="fas fa-chevron-down ml-2 text-[10px]"></i
+        ></span>
+      </li>
+      <hr>
+      <li>
+        <a href="#">Pricing</a
+        >
+      </li>
+      <li>
+        <a href="#">Learn</a
+        >
+      </li>
+      <li class="flex items-center space-x-4">
+        <a href="#" class="sign-up-btn inline-block border border-darkGreen px-8 py-2 text-darkGreen">Sign up</a>
+        <a href="#" class="log-in-btn inline-block border bg-darkGreen px-8 py-2 text-white">Log in</a>
+      </li>
+      
+    </ul>
+ 
+    </nav>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero bg-lightCream">
+        <div class="container p-4 md:mx-auto">
+          <div
+            class="hero-wrapper flex flex-col lg:flex-row items-center h-screen"
+          >
+            <div class="hero-left mt-8 lg:mt-0 w-full lg:w-1/2">
+              <h1
+                class="text-3xl leading-8 md:text-5xl font-semibold text-darkGreen"
+              >
+                The easiest way to sell <br />online in India
+              </h1>
+              <p class="md:text-xl my-10 text-gray-600">
+                Try one of the most powerful platforms on the <br />market for
+                free. No technical knowledge needed.
+              </p>
+              <form action="">
+                <input
+                  class="px-2 py-2 inline-block w-[18rem] rounded-md border-2 border-darkGreen"
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Enter Your email"
+                />
+                <a href="" class="btn">Try for free</a>
+              </form>
+              <p class="text-sm my-6 text-gray-600">
+                Try Shopify free for 14 days, no credit card required. By
+                entering your email, you agree <br />to receive marketing emails
+                from Shopify.
+              </p>
+            </div>
+
+            <div class="hero-img w-full lg:w-1/2 relative lg:right-[0rem]">
+              <img src="./images/hero-image.jpg" class="scale-105" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =================================
+             BRING BUSINESS ONLINE SECTION
+           ================================= -->
+      <section
+        class="business py-16 bg-darkGreen text-white relative sm:top-16 md:top-0"
+      >
+        <div class="container p-4 sm:mx-auto">
+          <h1 class="business-heading text-3xl sm:text-4xl md:text-5xl">
+            Bring your business online
+          </h1>
+          <p class="business-para my-4">
+            Create an ecommerce website backed by powerful tools that help you
+            find customers, drive sales, and manage your day-to-day.
+          </p>
+          <a href="#" class="inline-block mb-4"
+            >Explore more examples
+            <i class="fas fa-arrow-right hover:translate-x-1 transition-all"></i
+          ></a>
+          <div
+            class="business-card-wrapper grid md:grid-cols-3 md:gap-4 lg:grid-cols-5 mt-10"
+          >
+            <!-- 1st Card -->
+            <div class="card">
+              <img src="./images/business-img-1.jpg" alt="" />
+
+              <a href="#" class="hover:underline block my-2">FOOD & DRINK</a>
+              <a href="#" class="inline-block mb-4">Blue Tokai</a>
+            </div>
+            <!-- 2nd card -->
+            <div class="card">
+              <img src="./images/business-img-2.jpg" alt="" />
+
+              <a href="#" class="hover:underline block my-2">JEWELLERY</a>
+              <a href="#" class="inline-block mb-4">Quirksmith</a>
+            </div>
+            <!-- 3rd Card -->
+            <div class="card">
+              <img src="./images/business-img-3.jpg" alt="" />
+
+              <a href="#" class="hover:underline block my-2">ELECTRONICS</a>
+              <a href="#" class="inline-block mb-4">Crossbeats</a>
+            </div>
+            <!-- 4th Card -->
+            <div class="card">
+              <img src="./images/business-img-4.jpg" alt="" />
+
+              <a href="#" class="hover:underline block my-2">BEAUTY</a>
+              <a href="#" class="inline-block mb-4">Blue Tokai</a>
+            </div>
+            <!-- 5th Card -->
+            <div class="card">
+              <img src="./images/business-img-5.jpg" alt="" />
+
+              <a href="#" class="hover:underline block my-2">FASHION</a>
+              <a href="#" class="inline-block mb-4">Blue Tokai</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================================
+      TAKE THE BEST FORWARD SECTION
+      ================================= -->
+      <section
+        class="py-12 relative sm:top-16 md:top-0 text-white bg-darkGreen"
+      >
+        <div class="container sm:mx-auto p-4">
+          <h1 class="2xl sm:text-3xl md:text-4xl py-6">
+            Take the best path forward
+          </h1>
+          <div class="path-wrapper grid md:grid-cols-2 gap-4 lg:grid-cols-4">
+            <!-- Path card - 1 -->
+            <div class="path-card p-3">
+              <i class="fas fa-business-time text-4xl my-4"></i>
+              <h3 class="text-xl">Start a online business</h3>
+              <p class="text-sm">
+                Create a business, whether you’ve got a fresh idea or are
+                looking for a new way to make money.
+              </p>
+            </div>
+            <!-- Path card -2 -->
+            <div class="path-card p-3">
+              <i class="fas fa-truck-moving my-4 text-4xl"></i>
+              <h3 class="text-xl">Move your business online</h3>
+              <p class="text-sm">
+                Turn your retail store into an online store and keep serving
+                customers without missing a beat.
+              </p>
+            </div>
+            <!-- Path card -3 -->
+            <div class="path-card p-3">
+              <i class="fas fa-random my-4 text-4xl"></i>
+              <h3 class="text-xl">Switch to Shopify</h3>
+              <p class="text-sm">
+                Bring your business to Shopify, no matter which ecommerce
+                platform you’re currently using.
+              </p>
+            </div>
+            <!-- Path card -4 -->
+            <div class="path-card p-3">
+              <i class="fas fa-users my-4 text-4xl"></i>
+              <h3 class="text-xl">Hire a Shopify expert</h3>
+              <p class="text-sm">
+                Get set up with the help of a trusted freelancer or agency from
+                the Shopify Experts Marketplace.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================================================
+            VEDIO SECTION (WITH YOU WHEREVER YOU ARE GOING)
+           ================================================ -->
+      <section class="py-6">
+        <div class="vedio-heading text-center my-16">
+          <h1 class="text-2xl sm:text-3xl md:text-5xl">
+            With you wherever you’re going
+          </h1>
+          <p class="text-xl text-lightGreen my-4">
+            One platform with all the ecommerce and point of sale features
+            <br />you need to start, run, and grow your business.
+          </p>
+        </div>
+        <div class="container sm:mx-auto p-4">
+          <div class="vedio-wrapper grid md:grid-cols-2 items-center gap-3">
+            <video
+              muted="muted"
+              loop="loop"
+              playsinline="playsinline"
+              data-autoplay="true"
+              data-lazyload="true"
+              data-poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/poster-sell-9a9415a0989001f51a3870a065e65b4cfaa5dbaa250288f60a7e5b6ba4f22394.jpg"
+              data-event-page="homepage"
+              data-event-category="homepage"
+              data-event-action="sell"
+              data-event-label="video-toggle"
+              class="video__video"
+              autoplay=""
+              poster="https://cdn.shopify.com/shopifycloud/brochure/assets/home/poster-sell-9a9415a0989001f51a3870a065e65b4cfaa5dbaa250288f60a7e5b6ba4f22394.jpg"
+            >
+              <source
+                data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm"
+                type="video/webm"
+                src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm"
+              />
+              <source
+                data-src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-e91e64db2d38816861b2eb3243eb9d8b28225f47269954d9f257cc850bb2f33a.mp4"
+                type="video/mp4"
+                src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/sell-animation-desktop-e91e64db2d38816861b2eb3243eb9d8b28225f47269954d9f257cc850bb2f33a.mp4"
+              />
+            </video>
+            <div class="vedeo-text md:p-6">
+              <h3 class="text-2xl md:text-3xl">Sell everywhere</h3>
+              <p class="pr-4 md:pr-12 text-gray-400 py-1">
+                Use one platform to sell products to anyone, anywhere—in person
+                with Point of Sale and online through your website, social
+                media, and online marketplaces.
+              </p>
+              <a href="#" class="text-xl text-darkGreen">
+                Explore ways to sell
+                <span
+                  ><i
+                    class="fas fa-arrow-right ml-2 hover:translate-x-3 transition-all"
+                  ></i
+                ></span>
+              </a>
+            </div>
+            <!-- Vedio-card-2 -->
+            <div class="vedeo-text md:p-6">
+              <h3 class="text-2xl md:text-3xl">Sell everywhere</h3>
+              <p class="pr-4 md:pr-12 text-gray-400 py-1">
+                Use one platform to sell products to anyone, anywhere—in person
+                with Point of Sale and online through your website, social
+                media, and online marketplaces.
+              </p>
+              <a href="#" class="text-xl text-darkGreen">
+                Explore ways to sell
+                <span
+                  ><i
+                    class="fas fa-arrow-right ml-2 hover:translate-x-3 transition-all"
+                  ></i
+                ></span>
+              </a>
+            </div>
+            <img src="./images/vedio-img-2.jpg" alt="" />
+            <!-- Vedio card -3 -->
+            <img src="./images/vedio-img-2.jpg" alt="" />
+            <div class="vedeo-text md:p-6">
+              <h3 class="text-2xl md:text-3xl">Manage everything</h3>
+              <p class="pr-4 md:pr-12 text-gray-400 py-1">
+                Gain the insights you need to grow—use a single dashboard to
+                manage orders, shipping, and payments anywhere you go.
+              </p>
+              <a href="#" class="text-xl text-darkGreen">
+                Explore how to manage your business
+                <span
+                  ><i
+                    class="fas fa-arrow-right ml-2 hover:translate-x-3 transition-all"
+                  ></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =====================
+          Empowering independent section
+          ==================== -->
+      <section class="empowering-business py-6">
+        <div class="container sm:mx-auto p-4">
+          <h2 class="text-3xl md:text-4xl">
+            Empowering independent business <br />owners everywhere
+          </h2>
+          <h3 class="text-2xl my-8">
+            Millions of businesses in <strong> 175 countries </strong>around the
+            world have <br />
+            over <strong> $496 billion USD</strong> in sales using Shopify.
+          </h3>
+          <a href="#" class="text-xl text-darkGreen block font-bold">
+            Explore how to manage your business
+            <span
+              ><i
+                class="fas fa-arrow-right ml-2 hover:translate-x-3 transition-all"
+              ></i
+            ></span>
+          </a>
+          <img src="./images/globe-img.png" alt="" />
+        </div>
+      </section>
+      <!-- ========================
+                    REVIEW SECTION
+              ======================== -->
+      <section class="review py-6">
+        <div class="container sm:mx-auto p-4">
+          <div class="review-wrapper flex flex-col md:flex-row">
+            <img src="./images/review-img.jpg" alt="" class="md:w-1/2" />
+            <div
+              class="review-text bg-darkGreen text-white md:w-1/2 flex flex-col px-10 md:px-16 xl:px-24"
+            >
+              <h3 class="text-xl md:text-2xl mt-20 ">
+                “Shopify was my knight in shining armor when I exhausted every
+                other possibility of getting my online store up and running. It
+                was stunningly easy to use, with more features and plug-ins that
+                I didn’t even know I wanted.”
+              </h3>
+              <img
+                src="./images/review-img-2.png"
+                class="w-[9rem] mx-auto mt-6"
+                alt=""
+              />
+              <h4 class="text-lg w-[15rem] mx-auto mt-6">
+                Alicia | Alicia Souza
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================
+                    OUR CLIENT SECTION
+              ======================== -->
+      <section class="py-4 bg-fuchsia-200">
+        <div class="container sm:mx-auto p-4">
+          <div
+            class="client-wrapper flex items-center justify-between flex-col md:flex-row gap-10"
+          >
+            <div class="client-img md:w-24">
+              <img src="./images/client-1.webp" alt="" />
+            </div>
+            <div class="client-img md:w-24">
+              <img src="./images/client-2.webp" alt="" />
+            </div>
+            <div class="client-img md:w-24">
+              <img src="./images/client-3.webp" alt="" />
+            </div>
+            <div class="client-img md:w-24">
+              <img src="./images/client-4.webp" alt="" />
+            </div>
+            <div class="client-img md:w-24">
+              <img src="./images/client-5.avif" alt="" />
+            </div>
+            <div class="client-img">
+              <img src="./images/client-6.webp" alt="" />
+            </div>
+            <div class="client-img md:w-24">
+              <img src="./images/client-7.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================
+                    OUR HELP DESK SECTION
+              ======================== -->
+      <section class="py-4">
+        <div class="container sm:mx-auto p-4">
+          <div class="help-wrapper flex lg:flex-row flex-col bg-lightCream">
+            <div class="help-left">
+              <h2 class="text-2xl md:text-4xl ml-6 mt-20 mb-12 md:mb-16">
+                Get the help you need, <br />every step of the way
+              </h2>
+              <div class="help-left-wrapper flex gap-6 flex-wrap px-6">
+                <!-- 1st help -->
+                <div class="help-left-inner lg:w-[45%]">
+                  <h4 class="text-lg">Shopify support</h4>
+                  <p class="text-gray-500 text-sm">
+                    Contact support 24/7, whether you’re troubleshooting issues
+                    or looking for business advice.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-block mb-4 text-darkGreen font-semibold"
+                    >Contact Support
+                    <i
+                      class="fas fa-arrow-right hover:translate-x-1 transition-all"
+                    ></i
+                  ></a>
+                </div>
+                <!-- 2nd help  -->
+                <div class="help-left-inner lg:w-[45%]">
+                  <h4 class="text-lg">Shopify Experts Marketplace</h4>
+                  <p class="text-gray-500 text-sm">
+                    Hire a Shopify expert to help you with everything from store
+                    setup to SEO.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-block mb-4 text-darkGreen font-semibold"
+                    >Explore the Shopify Experts Marketplace
+                    <i
+                      class="fas fa-arrow-right hover:translate-x-1 transition-all"
+                    ></i
+                  ></a>
+                </div>
+                <!-- 3rd help -->
+                <div class="help-left-inner lg:w-[45%]">
+                  <h4 class="text-lg">Shopify App Store</h4>
+                  <p class="text-gray-500 text-sm">
+                    Add features and functionality to your business with 6,000+
+                    apps that integrate directly with Shopify.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-block mb-4 text-darkGreen font-semibold"
+                    >Visit the Shopify App Store
+                    <i
+                      class="fas fa-arrow-right hover:translate-x-1 transition-all"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="help-right">
+              <img src="./images/help-section-img.jpg" alt="" class="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================
+                    FREE TRAIL SECTION
+              ======================== -->
+      <section class="py-6">
+        <div class="container p-4 text-center">
+          <h3 class="trail-heading text-2xl lg:text-3xl my-4">
+            Start your business journey with Shopify
+          </h3>
+          <p class="text-gray-500">
+            Try Shopify for free, and explore all the tools and services you
+            need to start, run, and grow<br />
+            your business.
+          </p>
+          <a href="#" class="btn my-4 inline-block">Start Free Trail</a>
+        </div>
+      </section>
+    </main>
+    <!-- ========================
+                  FOOTER STARTS HERE
+              ======================== -->
+    <footer class="py-6 bg-darkGreen text-white">
+      <div class="container p-4">
+        <div class="footer-top">
+          <ul class="flex flex-wrap gap-6">
+            <li><a href="#" class="font-semibold my-6">About</a></li>
+            <li><a href="#" class="font-semibold my-6">Career</a></li>
+            <li><a href="#" class="font-semibold my-6">Press and Media</a></li>
+            <li><a href="#" class="font-semibold my-6">Shopify plus</a></li>
+            <li><a href="#" class="font-semibold my-6">Sitemap</a></li>
+          </ul>
+        </div>
+        <hr class="my-6 border-lightGreen" />
+        <div class="footer-middle">
+          <div class="footer-links-wrapper-1">
+            <div
+              class="footer-middle-left grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 md:gap-12 text-sm text-gray-400 my-4"
+            >
+             <div>
+              <h4 class="font-semibold text-white">ONLINE STORE</h4>
+              <ul class="list-1 ">
+                <li class="my-2 hover:text-white transition-all"><a href="#">Sell Online</a></li>
+                <li class="my-2 hover:text-white transition-all"><a href="#">Examples</a></li>
+                <li class="my-2 hover:text-white transition-all"><a href="#">Website Builder</a></li>
+                <li class="my-2 hover:text-white transition-all"><a href="#">Online Retail</a></li>
+              </ul>
+             </div>
+              <ul class="list-2 mt-4 md:mt-6">
+                <li class="my-2 hover:text-white transition-all"><a href="#">Ecommerce Website</a></li>
+                <li class="my-2 hover:text-white transition-all"><a href="#">Domain names</a></li>
+                <li class="my-2 hover:text-white transition-all"><a href="#">Shopping cart</a></li>
+                <li class="my-2 hover:text-white transition-all"><a href="#">Ecommerce hosting</a></li>
+              </ul>
+              <ul class="list-3 mt-4 md:mt-6">
+                <li class="my-2 hover:text-white transition-all"><a href="#">Mobile commerce</a></li>
+                <li class="my-2 hover:text-white transition-all"><a href="#">Online store builder</a></li>
+                <li class="my-2 hover:text-white transition-all"><a href="#">Dropshopping business</a></li>
+                <li class="my-2 hover:text-white transition-all"><a href="#">Store themes</a></li>
+              </ul>
+              <div>
+                <h4 class="font-semibold text-white">POINT OF SALE</h4>
+                <ul class="list-4">
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Point of Sale</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Features</a></li>
+                 
+                </ul>
+               </div>
+               <div>
+                <h4 class="font-semibold text-white">SUPPORT</h4>
+                <ul class="list-5">
+                  <li class="my-2 hover:text-white transition-all"><a href="#">24/7 Support</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Shopify help center</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Shopify Community</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Api Documentation</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Free Tools</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Free Stock Fhotos</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Website for Sale</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Logo Maker</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Business name generator</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Research</a></li>
+
+                </ul>
+               </div>
+               <div>
+                <h4 class="font-semibold text-white">SHOPIFY</h4>
+                <ul class="list-6">
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Contact</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Partner Program</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Website Builder</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Online Retail</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Shopify Community</a></li>
+                  <li class="my-2 hover:text-white transition-all"><a href="#">Api Documentation</a></li>
+                </ul>
+               </div>
+            </div>
+            <hr class="my-6 border-lightGreen" />
+            <div class="footer-bottom">
+              <div class="social-icons ">
+                <span><i class="fab fa-facebook border-2 mx-2 p-2 rounded-full bg-white text-black"></i></span>
+                <span><i class="fab fa-twitter border-2 mx-2 p-2 rounded-full bg-white text-black"></i></span>
+                <span><i class="fab fa-instagram border-2 mx-2 p-2 rounded-full bg-white text-black"></i></span>
+                <span><i class="fab fa-youtube border-2 mx-2 p-2 rounded-full bg-white text-black"></i></span>
+                <span><i class="fab fa-pinterest-p border-2 mx-2 p-2 rounded-full bg-white text-black"></i></span>
+                <span><i class="fab fa-linkedin-in border-2 mx-2 p-2 rounded-full bg-white text-black"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
